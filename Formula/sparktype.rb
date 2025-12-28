@@ -11,7 +11,7 @@ class Sparktype < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/hntrl/sparktype/releases/download/v0.1.0/sparktype_0.1.0_darwin_amd64.tar.gz"
-      sha256 "75aca0e1487f3e4da894febf7687a9f2cc820876a6157f8c02405a6b2d370587"
+      sha256 "9dd69ed482fa19d837d465484d84ac8de9008a86fdab24414f1a48a4ec01a234"
 
       def install
         bin.install "sparktype"
@@ -19,7 +19,7 @@ class Sparktype < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/hntrl/sparktype/releases/download/v0.1.0/sparktype_0.1.0_darwin_arm64.tar.gz"
-      sha256 "cccee52afac0a39e89dd4849379b043b029fecd55a4288fd448e99149ed49b3e"
+      sha256 "4c63b7ac194e83a8fad94fced4ff45ce47b3dbfea1cc084270d406eb94dd1b4c"
 
       def install
         bin.install "sparktype"
@@ -30,14 +30,14 @@ class Sparktype < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/hntrl/sparktype/releases/download/v0.1.0/sparktype_0.1.0_linux_amd64.tar.gz"
-      sha256 "91295813444154e85caafa752a4f655954c76579885fd4fa03c87ae3dec0e836"
+      sha256 "0ab4027e23e6f4a6b370a2acd955908397197b2cc9e0c2e8c16675bf3a1ef42f"
       def install
         bin.install "sparktype"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/hntrl/sparktype/releases/download/v0.1.0/sparktype_0.1.0_linux_arm64.tar.gz"
-      sha256 "fc78835c7679212cc62daafbecf7f062e3b4e74b00db778825d65c36b3a7e145"
+      sha256 "d2fc9f69cb494e435fe5e44a03fb5d8fe2f7ed4a73df06bfe67e20921616db12"
       def install
         bin.install "sparktype"
       end
