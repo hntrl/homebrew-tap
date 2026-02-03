@@ -5,21 +5,21 @@
 class Sparktype < Formula
   desc "Generate static types from OpenAPI specifications"
   homepage "https://github.com/hntrl/sparktype"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hntrl/sparktype/releases/download/v0.1.0/sparktype_0.1.0_darwin_amd64.tar.gz"
-      sha256 "65bdd1f2ea0b5760f957fc4863635b32bc43078a6e25d2efa4929bd179f23f79"
+      url "https://github.com/hntrl/sparktype/releases/download/v0.1.1/sparktype_0.1.1_darwin_amd64.tar.gz"
+      sha256 "d56b6637504bb1313db2937f4a6e0141a2ef46ed6f2b7223b4a22887103fa7ed"
 
       def install
         bin.install "sparktype"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hntrl/sparktype/releases/download/v0.1.0/sparktype_0.1.0_darwin_arm64.tar.gz"
-      sha256 "5dcb04b3375a7ad879066a48170982778570ce921f4a95bfa8a651d3069f6592"
+      url "https://github.com/hntrl/sparktype/releases/download/v0.1.1/sparktype_0.1.1_darwin_arm64.tar.gz"
+      sha256 "08d0dbb65c5f66eb5828e10ec19755164cc6577c2778c04d39be807ffab344f3"
 
       def install
         bin.install "sparktype"
@@ -29,15 +29,15 @@ class Sparktype < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hntrl/sparktype/releases/download/v0.1.0/sparktype_0.1.0_linux_amd64.tar.gz"
-      sha256 "97e76888429580a735a2dd252841a8c0b99cf294d498a150b7236380994e883b"
+      url "https://github.com/hntrl/sparktype/releases/download/v0.1.1/sparktype_0.1.1_linux_amd64.tar.gz"
+      sha256 "c607603306ef0dfcd2b4561a6946b5a7e6c30f2e38cf34aa5aa1186741a8ff61"
       def install
         bin.install "sparktype"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hntrl/sparktype/releases/download/v0.1.0/sparktype_0.1.0_linux_arm64.tar.gz"
-      sha256 "0a750a28bae6d8e64fb939ffbaadf4729c992a7d09673f9611b746383a8501e6"
+      url "https://github.com/hntrl/sparktype/releases/download/v0.1.1/sparktype_0.1.1_linux_arm64.tar.gz"
+      sha256 "6a1303c286ce22695ee045351405c0309848def00a87f6c8bb0bcf4901b1b065"
       def install
         bin.install "sparktype"
       end
